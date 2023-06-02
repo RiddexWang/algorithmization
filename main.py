@@ -1,8 +1,10 @@
 if __name__ == '__main__':
-    N = int(input())
     i = 0
     mess = ""
-    while i < N:
-        mess += input() + " "
-        i += 1
+    while i < 1:
+        word = input()
+        if word == 'stop':
+            break
+        else:
+             mess += word + " "
     print(mess)
