@@ -1,5 +1,9 @@
-def print_hi(name):
-    print(f'Hi, {name}')
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
+    while True:
+        word = input("Введите слово: ")
+        if word.lower() == "стоп":
+            break
+        elif "ф" in word.lower():
+            print("Ого! Это редкое слово!")
+        else:
+            print("Эх, это не очень редкое слово...")
