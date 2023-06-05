@@ -1,5 +1,8 @@
-def print_hi(name):
-    print(f'Hi, {name}')
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
+    N = int(input())
+    i = 0
+    mess = ""
+    while i < N:
+        mess += input() + " "
+        i += 1
+    print(mess)
