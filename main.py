@@ -1,5 +1,10 @@
-def print_hi(name):
-    print(f'Hi, {name}')
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
+    i = 0
+    mess = ""
+    while i < 1:
+        word = input()
+        if word == 'stop':
+            break
+        else:
+             mess += word + " "
+    print(mess)
