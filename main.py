@@ -1,12 +1,13 @@
 if __name__ == '__main__':
-    a = int(input("введите номер места "))
-    if a < 1 or a > 54:
-        print('Такого места нет')
-    elif a % 2 == 0 and a <= 36:
-        print('Вверхнее место в купе')
-    elif a % 2 != 0 and a <= 35:
-        print('Нижннее место в купе')
-    elif a % 2 == 0 and a > 36:
-        print('Вверхнее боковое место')
+    def is_leap_year(year):
+        if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+            return True
+        else:
+            return False
+
+
+    year = int(input("Введите год: "))
+    if is_leap_year(year):
+        print("Год", year, " - високосный")
     else:
-        print('Нижнее боковое место')
+        print("Это год не високосный")
