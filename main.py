@@ -3,7 +3,7 @@ other_group = ["Соколов", "Иванов", "Князев", "Титов", "
 team = tuple(my_group[:5] + other_group[:5])
 print("Список студентов моей группы:", my_group)
 print("Список студентов другой группы:", other_group)
-print("Спортивная команда:", team)
+print("Спортивная командa:", team)
 print("Длина кортежа:", len(team))
 sorted_team = sorted(team)
 print("Отсортированный список:", sorted_team)
