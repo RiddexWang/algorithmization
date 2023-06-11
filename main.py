@@ -9,4 +9,4 @@ for element in my_list:
 if len(repeated_elements) > 0:
     print(f"В списке есть повторяющиеся элементы: {repeated_elements}")
 else:
-    print("В списке нет повторяющихся элементов")
+    print("В списке нет повторяющихся элементoв")
