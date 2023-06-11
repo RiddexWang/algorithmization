@@ -1,5 +1,15 @@
-def print_hi(name):
-    print(f'Hi, {name}')
-if __name__ == '__main__':
-    print_hi('PyCharm')
+my_group = ["Иванов", "Петров", "Сидоров", "Кузнецов", "Смирнов", "Васильев", "Козлов", "Морозов", "Новиков", "Алексеев"]
+other_group = ["Соколов", "Иванов", "Князев", "Титов", "Кравцов", "Федоров", "Макаров", "Иванов", "Куликов", "Жуков"]
+team = tuple(my_group[:5] + other_group[:5])
+print("Список студентов моей группы:", my_group)
+print("Список студентов другой группы:", other_group)
+print("Спортивная команда:", team)
+print("Длина кортежа:", len(team))
+sorted_team = sorted(team)
+print("Отсортированный список:", sorted_team)
+ivanov_count = sorted_team.count("Иванов")
+if ivanov_count > 0:
+    print(f"Студент Иванов входит в команду и встречается {ivanov_count} раз(а)")
+else:
+    print("Студент Иванов не входит в команду")
 
